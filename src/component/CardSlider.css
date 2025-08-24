@@ -1,7 +1,7 @@
 /* Import Google Font: Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 .slider-wrapper {
-  padding: 100px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +128,17 @@
 
   .slider-header p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-wrapper {
+    padding: 48px 12px;
+    min-height: auto;
+  }
+
+  .card-frame {
+    min-height: 0;
   }
 }
 

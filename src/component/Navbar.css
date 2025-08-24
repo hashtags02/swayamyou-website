@@ -7,6 +7,14 @@
   flex-wrap: wrap;
 }
 
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 /* Left Navbar */
 .navbar-left ul {
   list-style: none;
@@ -62,10 +70,17 @@
     gap: 1rem;
   }
 
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .navbar-left ul {
     flex-direction: column;
     gap: 1rem;
     margin-left: 0;
+    display: none;
   }
 
   .navbar-center {
@@ -86,5 +101,10 @@
   .navbar > div {
     flex: none;
     width: 100%;
+  }
+
+  /* show menu when open */
+  .navbar.mobile-open .navbar-left ul {
+    display: flex;
   }
 }

@@ -104,8 +104,9 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  max-width: 600px;
+  max-width: 900px;
   width: 100%;
+  margin: 0 auto;
 }
 
 /* Feature Box */
@@ -141,6 +142,16 @@ body {
   .btn-secondary {
     font-size: 14px;
     padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .subheading {
+    font-size: 14px;
   }
 }
 
