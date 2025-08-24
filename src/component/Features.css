@@ -170,6 +170,18 @@
   }
 }
 
+@media (max-width: 480px) {
+  .features-container {
+    padding: 1.5rem 0.75rem;
+  }
+  .features-content p {
+    font-size: 0.85rem;
+  }
+  .feature-card {
+    width: 100%;
+  }
+}
+
 /* Prevent horizontal scroll */
 body {
   overflow-x: hidden;

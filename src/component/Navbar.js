@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 import "./Navbar.css";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav
-      className="navbar"
+      className={`navbar ${isOpen ? 'mobile-open' : ''}`}
       style={{
         backgroundImage: "url('/background.png')",
         backgroundSize: "auto",
@@ -12,6 +14,14 @@ function Navbar() {
         backgroundRepeat: "repeat",
       }}
     >
+      <button
+        className="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded={isOpen}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+      </button>
       <div className="navbar-left">
         <ul>
           <li><a href="#home" className="nav-link">Home</a></li>
